@@ -20,6 +20,7 @@ public class ChatHandler extends SimpleChannelInboundHandler<TextWebSocketFrame>
         //获取从客户端传输过来的消息
         String text = msg.text();
         System.out.println("接收到的数据"+text);
+        System.out.println();
 
         //将接收到消息发送给所有的客户端
         for (Channel client : clients) {
